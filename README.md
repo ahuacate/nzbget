@@ -28,7 +28,7 @@ Your basic NZBGet settings should've been configured when you installed NZBGet a
 The basic settings are:
 *  download location changed to your ZFS typhoon-share downloads folder /mnt/downloads/nzbget;
 *  NZBGet daemon username changed to run under media not root;
-*  create and add labels sonarr, radarr, lidarr and lazylibrarian;
+*  create and add labels sonarr-series, radarr-movies, lidarr-music and lazylibrarian;
 *  create a RPC username and password.
 
 ## 2.00 NZBGet Security Preferences
