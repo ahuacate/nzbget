@@ -41,20 +41,26 @@ In your web browser click on the `Settings Tab` > `Security Tab` and set the fol
 | ControlIP | 0.0.0.0
 | ControlPort | 6789
 | ControlUsername | `storm` | *Add the username `storm`*
-| ControlPassword | *********
-| RestrictedUsername
-| RestrictedPassword
-| AddUsername
-| AddPassword
-| FormAuth
-| SecureControl
-| SecurePort
-| 1-65535
-| SecureCert
-| SecureKey
-| AuthorizedIP
-| CertCheck
-| UpdateCheck
-| DaemonUsername
-| UMask
+| ControlPassword | ********* | *Add a complex password and record it i.e oTL&9qe/9Y&RV*
+| RestrictedUsername | `client` | *Add the username `client`*
+| RestrictedPassword | ********* | *Add a complex password and record it i.e oTL&9qe/9Y&RV*
+| AddUsername | rpcaccess | *The username `rpcaccess` should be preset. If not, add it*
+| AddPassword | Ut#)>3'o&RVmRj>] | *The password `Ut#)>3'o&RVmRj>]` should be preset. If not, add it*
+| FormAuth | No
+| SecureControl | No
+| SecurePort | 6791
+| SecureCert | blank
+| SecureKey | blank
+| AuthorizedIP | 127.0.0.1
+| CertCheck | Yes
+| UpdateCheck | Stable
+| DaemonUsername | `media` | *The daemon name `media` should be preset. If not, add it*
+| UMask | 1000
+
+And click `Save all changes`.
+
+## 3.00 Add your News-Servers
+Browse to http://192.168.30.112:6789 to edit the NZBGet News-Servers preferences. Your NZBget default login details are username `storm` and the password you set in the above step 2.00.
+
+In your web browser click on the `Settings Tab` > `News-Servers Tab` > `Add another Server` and add in your Usenet Server accounts.
 
