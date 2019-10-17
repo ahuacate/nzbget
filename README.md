@@ -14,10 +14,10 @@ Other Prerequisites are:
 - [x] NZBGet LXC with NZBGet SW installed as per [NZBget LXC - Ubuntu 18.04](https://github.com/ahuacate/proxmox-lxc-media/blob/master/README.md#300-nzbget-lxc---ubuntu-1804).
 
 Tasks to be performed are:
-- [ ] 1.00 Configure NZBGet Preferences
-- [ ] 2.00 Download the latest Execute Plugin for FileBot deluge-postprocess.sh script
-- [ ] 3.00 Download the latest Label Plugin configuration file
-- [ ] 4.00 Download the latest Autoremoveplus Plugin configuration file
+- [ ] 1.00 Basic NZBGet Preferences
+- [ ] 2.00 NZBGet Security Preferences
+- [ ] 3.00 Add your News-Servers
+- [ ] 4.00 Create & Restore NzbGet Backups
 - [ ] 00.00 Patches & Fixes
 
 ## 1.00 Basic NZBGet Preferences
@@ -62,5 +62,24 @@ And click `Save all changes`.
 ## 3.00 Add your News-Servers
 Browse to http://192.168.30.112:6789 to edit the NZBGet News-Servers preferences. Your NZBget default login details are username `storm` and the password you set in the above step 2.00.
 
-In your web browser click on the `Settings Tab` > `News-Servers Tab` > `Add another Server` and add in your Usenet Server accounts.
+In your web browser click on the `Settings Tab` > `News-Servers Tab` > `Add another Server` and add in your Usenet Server accounts. Remember to click `Save all changes` at the bottom of the page.
 
+## 4.00 Create & Restore NZBGet Backups
+
+NZBGet has a built in backup service.
+
+After installing NZBGet on your machine you may want to reuse the old config file in order to skip the full reconfiguration. For that purpose NZBGet web-interface provides two functions:
+
+*  Backup Settings;
+*  Restore Settings.
+
+### 4.01 Backup settings
+Browse to http://192.168.30.112:6789 to edit the NZBGet preferences.
+In your web browser click on `Settings Tab` > `SYSTEM Tab` > `Backup Settings` to create a backup of your current configuration. We recommend you store this file on your NAS share at `\\192.168.1.10\proxmox\backup\nzbget`. This file can be used later to restore settings on this or another machine. For restore purposes you can also use the configuration file (nzbget.conf) instead of backup file. This is helpful if the old setup doesn’t work anymore and you can’t access web-interface to create a backup of settings.
+
+### 4.02 Restore settings
+Browse to http://192.168.30.112:6789 to edit the NZBGet preferences.
+In your web browser click on `Settings Tab` > `SYSTEM Tab` > `Restore Settings` and browse to your NZBGet settings backup file (default naming like `nzbget-20191008-162540.conf`). You can restore either all settings or the settings from selected configuration sections. For example during restore process you can choose to restore only settings in the section “CATEGORIES” but not touch other settings.
+
+## 00.00 Patches & Fixes
+Nothing yet.
