@@ -20,6 +20,8 @@ Tasks to be performed are:
 - [ ] 4.00 Create & Restore NzbGet Backups
 - [ ] 00.00 Patches & Fixes
 
+---
+
 ## 1.00 Basic NZBGet Preferences
 All your preferences are stored in the `/opt/nzbget/nzbget.conf` file. 
 
@@ -30,6 +32,8 @@ The basic settings are:
 *  NZBGet daemon username changed to run under media not root;
 *  create and add labels sonarr-series, radarr-movies, lidarr-music and lazylibrarian;
 *  create a RPC username and password.
+
+---
 
 ## 2.00 NZBGet Security Preferences
 Browse to http://192.168.30.112:6789 to edit the NZBGet security preferences. Your NZBget default login details are (login:nzbget, password:tegbzn6789).
@@ -59,10 +63,14 @@ In your web browser click on the `Settings Tab` > `Security Tab` and set the fol
 
 And click `Save all changes`.
 
+---
+
 ## 3.00 Add your News-Servers
 Browse to http://192.168.30.112:6789 to edit the NZBGet News-Servers preferences. Your NZBget default login details are username `storm` and the password you set in the above step 2.00.
 
 In your web browser click on the `Settings Tab` > `News-Servers Tab` > `Add another Server` and add in your Usenet Server accounts. Remember to click `Save all changes` at the bottom of the page.
+
+---
 
 ## 4.00 Create & Restore NZBGet Backups
 
@@ -80,6 +88,8 @@ In your web browser click on `Settings Tab` > `SYSTEM Tab` > `Backup Settings` t
 ### 4.02 Restore settings
 Browse to http://192.168.30.112:6789 to edit the NZBGet preferences.
 In your web browser click on `Settings Tab` > `SYSTEM Tab` > `Restore Settings` and browse to your NZBGet settings backup file (default naming like `nzbget-20191008-162540.conf`). You can restore either all settings or the settings from selected configuration sections. For example during restore process you can choose to restore only settings in the section “CATEGORIES” but not touch other settings.
+
+---
 
 ## 00.00 Patches & Fixes
 Nothing yet.
